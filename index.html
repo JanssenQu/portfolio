@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Janssen's Website</title>
@@ -8,10 +8,121 @@
         <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, McGill, portfolio, developer">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/code.png">
-        <link href="css/style.css" rel="stylesheet">
+        <!-- EXTERNAL -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css">
+        <!-- CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/hamburger.css" rel="stylesheet">
+        <!-- <link href="css/typing.css" rel="stylesheet"> -->
+        <!-- <link href="css/typography.css" rel="stylesheet"> -->
+        <link href="css/scroll.css" rel="stylesheet">
     </head>
     <body>
-        <p>Hello, world!</p>
+        <nav class="navbar fixed-top navbar-expand-lg p-3">
+            <a class="navbar-brand" href="#">Janssen Qu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#experience">Experience</a>
+                    <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <section id="home">
+            <div class="container d-flex align-items-center vh-100">
+                <div class="row">
+                    <div class="col">
+                        <div id="intro">
+                            <p>Bonjour Hi!👋, I'm</p>
+                            <h1><b>Janssen Qu</b></h1>
+                            <h3>Software Developer</h3>
+                            <p>I'm a motivated programmer always driving for success.</p>
+                            <button type="button" class="btn btn-primary">Resume</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-auto">
+                <a class="scroll-down"></a>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container my-5 mx-auto">
+                <div class="row">
+                    <div class="col">
+                        <h3>About Me</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <p>
+                            My name is Janssen Qu and I graduated from McGill University in Computer Science. 
+                            I am open-minded, patient and persistent. 
+                            I strongly believe that there is always a solution to every problem we face today. 
+                            I have numerous interests such as science, art, music and sports. 
+                            Nevertheless, coding is my biggest passion!
+                        </p>
+                        <p>
+                            The story began when I read many articles about Python taking the crown for the most popular programming language in the world. 
+                            Since I loved math and logic, I tried learning Python and I fell in love immediately.
+                            Therefore, I followed a full course on Python and built my first ever Python project. 
+                            I quickly decided to pursue my career in programming and started studying Computer Science.
+                        </p>
+                        <p>
+                            At McGill, I learnt all sorts of topics, from web development to Machine Learning. 
+                            I was engaged in the McGill community. I was part of the GameDev team and created games with other members.
+                            I was also a helpdesk tutor, helping students with assignments, projects, exams and other CS course materials.
+                        </p>
+                        <p>
+                            Recently, I have found myself obsessed with anything related to data and developing softwares from the ground up. 
+                            Even though my favourite fields are data science and software development, 
+                            I am always curious to learn any new technologies in the market. Learning has no limit!
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 m-auto d-flex justify-content-center p-4">
+                        <img id="profile" src="images/me.jpg" height="300px">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience">     
+        </section>
+        <section id="projects">
+
+        </section>
+        <section id="contact">
+
+        </section>
+        <footer>
+
+        </footer>
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+        <script>
+            VANTA.NET({
+                el: "#home",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x1E90FF,
+                backgroundColor: 0x0
+            })
+        </script>
     </body>
 </html>
