@@ -1,26 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body{
-    font-family: 'Open Sans', serif !important;
-    background-color: black !important;
-    color: white !important;
+body {
+    font-family: 'Open Sans', serif;
+    background-color: #0e0f11;
+    color: white;
 }
 
-h3 {
+h3, .link {
     color: #1E90FF;
 }
 
 .btn-primary {
-    background-color: #1E90FF !important;
+    background-color: #1E90FF;
 }
 
 .bg-black {
-    background-color: black !important;
+    background-color: #0e0f11;
 }
 
 .navbar-toggler:focus {
-    outline: none !important;
-    box-shadow: none !important;
+    outline: none;
+    box-shadow: none;
 }
 
 #intro {
@@ -37,14 +37,19 @@ h3 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: lightgray;
+    background: white;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-corner {
     border-radius: 10px;
 }
-/* .nav-item {
-    padding: 10px !important;
-    margin-left: 10px !important;
-} */
+
+.card {
+    background-color: #1c1d1f;
+    width: 18rem;
+}
+
+.card img {
+    height: 200px;
+}

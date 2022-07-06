@@ -9,27 +9,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/code.png">
         <!-- EXTERNAL -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css">
         <!-- CSS -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/hamburger.css" rel="stylesheet">
+        <link href="css/tabs.css" rel="stylesheet">
         <!-- <link href="css/typing.css" rel="stylesheet"> -->
         <!-- <link href="css/typography.css" rel="stylesheet"> -->
         <link href="css/scroll.css" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-lg p-3">
-            <a class="navbar-brand" href="#">Janssen Qu</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#about">About</a>
-                    <a class="nav-item nav-link" href="#experience">Experience</a>
-                    <a class="nav-item nav-link" href="#projects">Projects</a>
-                    <a class="nav-item nav-link" href="#contact">Contact</a>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Janssen Qu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -52,13 +64,13 @@
             </div>
         </section>
         <section id="about">
-            <div class="container my-5 mx-auto">
-                <div class="row">
+            <div class="container mt-5 mx-auto">
+                <div class="row p-2">
                     <div class="col">
                         <h3>About Me</h3>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row p-2">
                     <div class="col-12 col-md-8">
                         <p>
                             My name is Janssen Qu and I graduated from McGill University in Computer Science. 
@@ -84,30 +96,212 @@
                             I am always curious to learn any new technologies in the market. Learning has no limit!
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 m-auto d-flex justify-content-center p-4">
+                    <div class="col-12 col-md-4 m-auto d-flex justify-content-center p-2">
                         <img id="profile" src="images/me.jpg" height="300px">
                     </div>
                 </div>
             </div>
         </section>
-        <section id="experience">     
+        <section id="experience">
+            <div class="container my-4 mx-auto">
+                <div class="row p-2">
+                    <div class="col">
+                        <h3>My Developer Journey</h3>
+                    </div>
+                </div>
+                <div class="row pt-4 pb-5">
+                    <div class="col">
+                        <div data-tabs class="tabs"> 
+                            <div class="tab">
+                                <input type="radio" name="tabgroup" id="tab-1" checked>
+                                <label for="tab-1">Expedia Group</label>
+                                <div class="tab__content">
+                                    <h4>
+                                        Software Development Engineer <a class="link" href="https://www.expediagroup.com/">@ Expedia Group</a>
+                                    </h4>
+                                    <p>AUG 2022</p>
+                                    <ul>
+                                        <li>
+                                            On-boarding for the world's biggest travel internet company.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="radio" name="tabgroup" id="tab-2">
+                                <label for="tab-2">Codeucate</label>
+                                <div class="tab__content">
+                                    <h4>
+                                        Software Developer <a class="link" href="https://wecodeucate.org/">@ Codeucate</a>
+                                    </h4>
+                                    <p>MAY 2022 - JUL 2022</p>
+                                    <ul>
+                                        <li>
+                                            Part of a fast paced nonprofit corporation to teach young generations
+                                            about computer science topics by offering online programming courses.
+                                        </li>
+                                        <li>
+                                            Worked closely with developers and proposed solutions to improve the web platform usability.
+                                        </li>
+                                        <li>
+                                            Built direct messaging and notification features using Python and Django framework.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="radio" name="tabgroup" id="tab-3">
+                                <label for="tab-3">TutorOcean</label>
+                                <div class="tab__content">
+                                    <h4>
+                                        Software Engineer Co-op <a class="link" href="https://www.tutorocean.com/">@ TutorOcean</a>
+                                    </h4>
+                                    <p>MAY 2021 - AUG 2022</p>
+                                    <ul>
+                                        <li>
+                                            Developed for the company's online tutoring platform.
+                                        </li>
+                                        <li>
+                                            Built automation tests using Python with Selenium, Robot Framework and MongoDB.
+                                        </li>
+                                        <li>
+                                            Fixed bugs and developed features for the website using JavaScript with Meteor and React framework.
+                                        </li>
+                                        <li>
+                                            Followed Agile methodology to deploy fast and reliable software.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="radio" name="tabgroup" id="tab-4">
+                                <label for="tab-4">McGill CSUS</label>
+                                <div class="tab__content">
+                                    <h4>
+                                        Helpdesk Tutor <a class="link" href="https://mcgill-csus.ca/">@ McGill CSUS</a>
+                                    </h4>
+                                    <p>SEP 2020 - APR 2022</p>
+                                    <ul>
+                                        <li>
+                                            Helped students in Computer Science through peer-to-peer tutoring.
+                                        </li>
+                                        <li>
+                                            Aid students with assignments, projects, exams and other CS related topics.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="projects">
-
+            <div class="container my-5 mx-auto">
+                <div class="row px-2 py-5">
+                    <div class="col">
+                        <h3>Projects</h3>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 m-auto">
+                          <img src="images/portfolio.png" class="card-img-top img-fluid" alt="portfolio">
+                          <div class="card-body">
+                            <h5 class="card-title">Old Portfolio</h5>
+                            <p class="card-text">Developed a personal website using HTML/CSS and JavaScript.</p>
+                          </div>
+                          <div class="card-footer d-flex justify-content-around">
+                            <i class="bi bi-github"></i>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 m-auto">
+                        <img src="images/ata.png" class="card-img-top img-fluid" alt="ata">
+                        <div class="card-body">
+                          <h5 class="card-title">Assisting Teaching Assistants</h5>
+                          <p class="card-text">Developed a TA managing website using HTML/CSS/JS, Python/Flask and SQLite. Placed top 3 in competition.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <i class="bi bi-github"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 m-auto">
+                          <img src="images/elfenroads.png" class="card-img-top img-fluid" alt="elfenroads">
+                          <div class="card-body">
+                            <h5 class="card-title">Elfenroads</h5>
+                            <p class="card-text">Yearly team project. Built a digital version of Elfenroads board game using JavaScript, React and Phaser.</p>
+                          </div>
+                          <div class="card-footer d-flex justify-content-around">
+                            <i class="bi bi-github"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 m-auto">
+                          <img src="images/mcgill.png" class="card-img-top img-fluid" alt="mcgill">
+                          <div class="card-body">
+                            <h5 class="card-title">McGill Website</h5>
+                            <p class="card-text">Created a resume styled website using HTML/CSS and PHP.</p>
+                          </div>
+                          <div class="card-footer d-flex justify-content-around">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 m-auto">
+                          <img src="images/path.png" class="card-img-top img-fluid" alt="path">
+                          <div class="card-body">
+                            <h5 class="card-title">Shortest Path Finder</h5>
+                            <p class="card-text">A java program that finds the shortest path from a given grid using a modified version of breadth-first search algorithm.</p>
+                          </div>
+                          <div class="card-footer d-flex justify-content-around">
+                            <i class="bi bi-github"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 m-auto">
+                        <img src="images/dungeon.png" class="card-img-top img-fluid" alt="dungeon">
+                        <div class="card-body">
+                          <h5 class="card-title">Dungeon Master</h5>
+                          <p class="card-text">Created a retro dungeon game using Python and PyGame.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <i class="bi bi-github"></i>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contact">
 
         </section>
         <footer>
-
+            <div class="container p-4 m-4">
+                <div class="mb-4 d-flex justify-content-center">
+                    <a href="https://www.facebook.com/janssen.qu" role="button"><i class="bi bi-facebook m-3 text-white"></i></a>
+                    <a href="https://www.instagram.com/ur_fav_qtip/" role="button"><i class="bi bi-instagram m-3 text-white"></i></a>
+                    <a href="https://github.com/JanssenQu" role="button"><i class="bi bi-github m-3 text-white"></i></a>
+                    <a href="https://www.linkedin.com/in/janssen-qu-4224131a4/" role="button"><i class="bi bi-linkedin m-3 text-white"></i></a>
+                </div>
+                <div class="text-center p-3">Made by Janssen Qu</div>
+            </div>
         </footer>
         <!-- JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js"></script>
         <script src="js/hamburger.js"></script>
         <script src="js/nav.js"></script>
+        <script src="js/tabs.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
         <script>
@@ -121,7 +315,7 @@
                 scale: 1.00,
                 scaleMobile: 1.00,
                 color: 0x1E90FF,
-                backgroundColor: 0x0
+                backgroundColor: 0x0e0f11
             })
         </script>
     </body>
