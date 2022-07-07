@@ -18,6 +18,7 @@
         <link href="css/tabs.css" rel="stylesheet">
         <!-- <link href="css/typing.css" rel="stylesheet"> -->
         <!-- <link href="css/typography.css" rel="stylesheet"> -->
+        <link href="css/button.css" rel="stylesheet">
         <link href="css/scroll.css" rel="stylesheet">
     </head>
     <body>
@@ -109,87 +110,84 @@
                         <h3>My Developer Journey</h3>
                     </div>
                 </div>
-                <div class="row pt-4 pb-5">
+                <div class="row p-2">
                     <div class="col">
-                        <div data-tabs class="tabs"> 
-                            <div class="tab">
-                                <input type="radio" name="tabgroup" id="tab-1" checked>
-                                <label for="tab-1">Expedia Group</label>
-                                <div class="tab__content">
-                                    <h4>
-                                        Software Development Engineer <a class="link" href="https://www.expediagroup.com/">@ Expedia Group</a>
-                                    </h4>
-                                    <p>AUG 2022</p>
-                                    <ul>
-                                        <li>
-                                            On-boarding for the world's biggest travel internet company.
-                                        </li>
-                                    </ul>
-                                </div>
+                        <p>Here are all my recent work experience.</p>
+                    </div>
+                </div>
+                <div class="row p-2 m-2">
+                    <div class="col">
+                        <nav class="mb-3">
+                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-expedia-tab" data-bs-toggle="tab" href="#nav-expedia" role="tab" aria-controls="nav-expedia" aria-selected="true">Expedia Group</a>
+                                <a class="nav-item nav-link" id="nav-codeucate-tab" data-bs-toggle="tab" href="#nav-codeucate" role="tab" aria-controls="nav-codeucate" aria-selected="false">Codeucate</a>
+                                <a class="nav-item nav-link" id="nav-tutorocean-tab" data-bs-toggle="tab" href="#nav-tutorocean" role="tab" aria-controls="nav-tutorocean" aria-selected="false">TutorOcean</a>
+                                <a class="nav-item nav-link" id="nav-csus-tab" data-bs-toggle="tab" href="#nav-csus" role="tab" aria-controls="nav-csus" aria-selected="false">McGill CSUS</a>
                             </div>
-                            <div class="tab">
-                                <input type="radio" name="tabgroup" id="tab-2">
-                                <label for="tab-2">Codeucate</label>
-                                <div class="tab__content">
-                                    <h4>
-                                        Software Developer <a class="link" href="https://wecodeucate.org/">@ Codeucate</a>
-                                    </h4>
-                                    <p>MAY 2022 - JUL 2022</p>
-                                    <ul>
-                                        <li>
-                                            Part of a fast paced nonprofit corporation to teach young generations
-                                            about computer science topics by offering online programming courses.
-                                        </li>
-                                        <li>
-                                            Worked closely with developers and proposed solutions to improve the web platform usability.
-                                        </li>
-                                        <li>
-                                            Built direct messaging and notification features using Python and Django framework.
-                                        </li>
-                                    </ul>
-                                </div>
+                        </nav>
+                        <div class="tab-content py-3 px-3" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-expedia" role="tabpanel" aria-labelledby="nav-expedia-tab">
+                                <h4>
+                                    Software Development Engineer <a class="link" href="https://www.expediagroup.com/">@ Expedia Group</a>
+                                </h4>
+                                <p>AUG 2022</p>
+                                <ul>
+                                    <li>
+                                        On-boarding for the world's biggest travel internet company.
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="tab">
-                                <input type="radio" name="tabgroup" id="tab-3">
-                                <label for="tab-3">TutorOcean</label>
-                                <div class="tab__content">
-                                    <h4>
-                                        Software Engineer Co-op <a class="link" href="https://www.tutorocean.com/">@ TutorOcean</a>
-                                    </h4>
-                                    <p>MAY 2021 - AUG 2022</p>
-                                    <ul>
-                                        <li>
-                                            Developed for the company's online tutoring platform.
-                                        </li>
-                                        <li>
-                                            Built automation tests using Python with Selenium, Robot Framework and MongoDB.
-                                        </li>
-                                        <li>
-                                            Fixed bugs and developed features for the website using JavaScript with Meteor and React framework.
-                                        </li>
-                                        <li>
-                                            Followed Agile methodology to deploy fast and reliable software.
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="tab-pane fade" id="nav-codeucate" role="tabpanel" aria-labelledby="nav-codeucate-tab">
+                                <h4>
+                                    Software Developer <a class="link" href="https://wecodeucate.org/">@ Codeucate</a>
+                                </h4>
+                                <p>MAY 2022 - JUL 2022</p>
+                                <ul>
+                                    <li>
+                                        Part of a fast paced nonprofit corporation to teach young generations
+                                        about computer science topics by offering online programming courses.
+                                    </li>
+                                    <li>
+                                        Worked closely with developers and proposed solutions to improve the web platform usability.
+                                    </li>
+                                    <li>
+                                        Built direct messaging and notification features using Python and Django framework.
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="tab">
-                                <input type="radio" name="tabgroup" id="tab-4">
-                                <label for="tab-4">McGill CSUS</label>
-                                <div class="tab__content">
-                                    <h4>
-                                        Helpdesk Tutor <a class="link" href="https://mcgill-csus.ca/">@ McGill CSUS</a>
-                                    </h4>
-                                    <p>SEP 2020 - APR 2022</p>
-                                    <ul>
-                                        <li>
-                                            Helped students in Computer Science through peer-to-peer tutoring.
-                                        </li>
-                                        <li>
-                                            Aid students with assignments, projects, exams and other CS related topics.
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="tab-pane fade" id="nav-tutorocean" role="tabpanel" aria-labelledby="nav-tutorocean-tab">
+                                <h4>
+                                    Software Engineer Co-op <a class="link" href="https://www.tutorocean.com/">@ TutorOcean</a>
+                                </h4>
+                                <p>MAY 2021 - AUG 2022</p>
+                                <ul>
+                                    <li>
+                                        Developed for the company's online tutoring platform.
+                                    </li>
+                                    <li>
+                                        Built automation tests using Python with Selenium, Robot Framework and MongoDB.
+                                    </li>
+                                    <li>
+                                        Fixed bugs and developed features for the website using JavaScript with Meteor and React framework.
+                                    </li>
+                                    <li>
+                                        Followed Agile methodology to deploy fast and reliable software.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="nav-csus" role="tabpanel" aria-labelledby="nav-csus-tab">
+                                <h4>
+                                    Helpdesk Tutor <a class="link" href="https://mcgill-csus.ca/">@ McGill CSUS</a>
+                                </h4>
+                                <p>SEP 2020 - APR 2022</p>
+                                <ul>
+                                    <li>
+                                        Helped students in Computer Science through peer-to-peer tutoring.
+                                    </li>
+                                    <li>
+                                        Aid students with assignments, projects, exams and other CS related topics.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -197,13 +195,18 @@
             </div>
         </section>
         <section id="projects">
-            <div class="container my-5 mx-auto">
-                <div class="row px-2 py-5">
+            <div class="container my-4 mx-auto">
+                <div class="row p-2">
                     <div class="col">
                         <h3>Projects</h3>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row p-2">
+                    <div class="col">
+                        <p>Few examples of my latest projects.</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-2 py-4">
                     <div class="col">
                         <div class="card h-100 m-auto">
                           <img src="images/portfolio.png" class="card-img-top img-fluid" alt="portfolio">
@@ -282,10 +285,28 @@
             </div>
         </section>
         <section id="contact">
-
+            <div class="container my-4 mx-auto text-center">
+                <div class="row p-2">
+                    <div class="col">
+                        <h3>Let's Have A Chat!</h3>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col">
+                        <p>My inbox is always open. Feel free to send me an email. I will be glad to reply!</p>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col">
+                        <a class="btn-1" href="mailto:janssen0105@gmail.com" rel="noopener noreferrer" target="_blank">
+                            <span>Send Greetings</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
-            <div class="container p-4 m-4">
+            <div class="container p-4 my-4 mx-auto">
                 <div class="mb-4 d-flex justify-content-center">
                     <a href="https://www.facebook.com/janssen.qu" role="button"><i class="bi bi-facebook m-3 text-white"></i></a>
                     <a href="https://www.instagram.com/ur_fav_qtip/" role="button"><i class="bi bi-instagram m-3 text-white"></i></a>
@@ -296,7 +317,7 @@
             </div>
         </footer>
         <!-- JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js"></script>
         <script src="js/hamburger.js"></script>
