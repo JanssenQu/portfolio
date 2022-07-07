@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Janssen's Website</title>
+        <title>Janssen Qu</title>
         <meta name="author" content="Janssen Qu">
         <meta name="description" content="Hello internet surfer! Welcome to my personal website!">
         <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, McGill, portfolio, developer">
@@ -29,7 +29,7 @@
                     <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#about">About</a>
                         </li>
@@ -104,7 +104,7 @@
             </div>
         </section>
         <section id="experience">
-            <div class="container my-4 mx-auto">
+            <div class="container my-4 p-2 mx-auto">
                 <div class="row p-2">
                     <div class="col">
                         <h3>My Developer Journey</h3>
@@ -115,17 +115,17 @@
                         <p>Here are all my recent work experience.</p>
                     </div>
                 </div>
-                <div class="row p-2 m-2">
-                    <div class="col">
-                        <nav class="mb-3">
-                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-expedia-tab" data-bs-toggle="tab" href="#nav-expedia" role="tab" aria-controls="nav-expedia" aria-selected="true">Expedia Group</a>
-                                <a class="nav-item nav-link" id="nav-codeucate-tab" data-bs-toggle="tab" href="#nav-codeucate" role="tab" aria-controls="nav-codeucate" aria-selected="false">Codeucate</a>
-                                <a class="nav-item nav-link" id="nav-tutorocean-tab" data-bs-toggle="tab" href="#nav-tutorocean" role="tab" aria-controls="nav-tutorocean" aria-selected="false">TutorOcean</a>
-                                <a class="nav-item nav-link" id="nav-csus-tab" data-bs-toggle="tab" href="#nav-csus" role="tab" aria-controls="nav-csus" aria-selected="false">McGill CSUS</a>
-                            </div>
-                        </nav>
-                        <div class="tab-content py-3 px-3" id="nav-tabContent">
+                <div class="row m-auto" style="max-width: 800px;">
+                    <div class="col-md-3">
+                        <div class="nav flex-md-column nav-tabs border-bottom-0 text-center" id="nav-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="nav-expedia-tab" data-bs-toggle="tab" href="#nav-expedia" role="tab" aria-controls="nav-expedia" aria-selected="true">Expedia Group</a>
+                            <a class="nav-link" id="nav-codeucate-tab" data-bs-toggle="tab" href="#nav-codeucate" role="tab" aria-controls="nav-codeucate" aria-selected="false">Codeucate</a>
+                            <a class="nav-link" id="nav-tutorocean-tab" data-bs-toggle="tab" href="#nav-tutorocean" role="tab" aria-controls="nav-tutorocean" aria-selected="false">TutorOcean</a>
+                            <a class="nav-link" id="nav-csus-tab" data-bs-toggle="tab" href="#nav-csus" role="tab" aria-controls="nav-csus" aria-selected="false">McGill CSUS</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content py-3 px-3 m-auto" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-expedia" role="tabpanel" aria-labelledby="nav-expedia-tab">
                                 <h4>
                                     Software Development Engineer <a class="link" href="https://www.expediagroup.com/">@ Expedia Group</a>
@@ -215,8 +215,8 @@
                             <p class="card-text">Developed a personal website using HTML/CSS and JavaScript.</p>
                           </div>
                           <div class="card-footer d-flex justify-content-around">
-                            <i class="bi bi-github"></i>
-                            <i class="bi bi-box-arrow-up-right"></i>
+                            <a href="https://github.com/JanssenQu/portfolio-old/"><i class="bi bi-github text-white"></i></a>
+                            <a href="https://janssenqu.github.io/portfolio-old/"><i class="bi bi-box-arrow-up-right text-white"></i></a>
                           </div>
                         </div>
                     </div>
@@ -228,7 +228,7 @@
                           <p class="card-text">Developed a TA managing website using HTML/CSS/JS, Python/Flask and SQLite. Placed top 3 in competition.</p>
                         </div>
                         <div class="card-footer d-flex justify-content-around">
-                            <i class="bi bi-github"></i>
+                            <a href="https://github.com/JanssenQu/COMP307-Project/"><i class="bi bi-github text-white"></i></a>
                           </div>
                       </div>
                     </div>
@@ -240,7 +240,7 @@
                             <p class="card-text">Yearly team project. Built a digital version of Elfenroads board game using JavaScript, React and Phaser.</p>
                           </div>
                           <div class="card-footer d-flex justify-content-around">
-                            <i class="bi bi-github"></i>
+                            <a href="https://github.com/COMP361/f2021-hexanome-01/"><i class="bi bi-github text-white"></i></a>
                           </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@
                             <p class="card-text">Created a resume styled website using HTML/CSS and PHP.</p>
                           </div>
                           <div class="card-footer d-flex justify-content-around">
-                            <i class="bi bi-box-arrow-up-right"></i>
+                            <a href="https://www.cs.mcgill.ca/~jqu16/"><i class="bi bi-box-arrow-up-right text-white"></i></a>
                           </div>
                         </div>
                     </div>
@@ -264,7 +264,7 @@
                             <p class="card-text">A java program that finds the shortest path from a given grid using a modified version of breadth-first search algorithm.</p>
                           </div>
                           <div class="card-footer d-flex justify-content-around">
-                            <i class="bi bi-github"></i>
+                            <a href="https://github.com/JanssenQu/ShortestPathFinder/"><i class="bi bi-github text-white"></i></a>
                           </div>
                         </div>
                     </div>
@@ -276,8 +276,8 @@
                           <p class="card-text">Created a retro dungeon game using Python and PyGame.</p>
                         </div>
                         <div class="card-footer d-flex justify-content-around">
-                            <i class="bi bi-github"></i>
-                            <i class="bi bi-box-arrow-up-right"></i>
+                            <a href="https://github.com/JanssenQu/DungeonMaster/"><i class="bi bi-github text-white"></i></a>
+                            <a href="https://janssen-qu.itch.io/dungeon-master/"><i class="bi bi-box-arrow-up-right text-white"></i></a>
                           </div>
                       </div>
                     </div>
