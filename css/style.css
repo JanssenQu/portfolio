@@ -14,17 +14,20 @@ h3, .link {
     background-color: #1E90FF;
 }
 
-.bg-black {
-    background-color: #0e0f11;
-}
-
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
+section {
+    scroll-margin-top: 92px;
 }
 
 #intro {
     margin: 0 15% 0 15%;
+}
+
+#intro p {
+    font-size: 20px;
+}
+
+#intro h3 {
+    font-size: 30px;
 }
 
 #profile {

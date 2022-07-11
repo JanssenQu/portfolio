@@ -1,0 +1,48 @@
+#navbar {
+    font-size: 16px;
+}
+
+.bg-black {
+    background-color: #0e0f11;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-item, .navbar-brand {
+    padding: 10px;
+}
+
+#navbar ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+  
+#navbar ul li a:hover {
+    color: #1E90FF;
+    transition: 0.5s;
+}
+  
+#navbar ul li a:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #1E90FF;
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+  
+#navbar ul li a:hover:after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+}
