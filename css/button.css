@@ -1,0 +1,22 @@
+.btn {
+  background-color: #1E90FF;
+  border: none;
+  color: transparent;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent; 
+  color: #1E90FF; 
+  border: 2px solid #1E90FF;
+}
+
+.btn:hover {
+  background-color: #1E90FF;
+  color: white;
+}

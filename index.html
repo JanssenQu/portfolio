@@ -7,7 +7,7 @@
         <meta name="description" content="Hello internet surfer! Welcome to my personal website!">
         <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, McGill, portfolio, developer">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="images/code.png">
+        <link rel="icon" href="static/code.png">
         <!-- EXTERNAL -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css">
@@ -23,8 +23,8 @@
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-lg p-3">
-            <a class="navbar-brand" href="#">Janssen Qu</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img class="img-fluid" src="static/logo.png" style="height: 50px;"></a>
+            <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" onclick="changeBg()">
                 <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
@@ -53,7 +53,7 @@
                             </div>
                             <h3>Software Developer</h3>
                             <p>I'm a motivated programmer always driving for success.</p>
-                            <button type="button" class="btn btn-primary">Resume</button>
+                            <a class="btn" href="static/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                         </div>
             </div>
             <div class="mt-auto">
@@ -94,7 +94,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-4 m-auto d-flex justify-content-center p-2">
-                        <img id="profile" src="images/me.jpg" height="300px">
+                        <img id="profile" src="static/me.jpg" height="300px">
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-2 py-4">
                     <div class="col">
                         <div class="card h-100 m-auto">
-                          <img src="images/portfolio.png" class="card-img-top img-fluid" alt="portfolio">
+                          <img src="static/portfolio.png" class="card-img-top img-fluid" alt="portfolio">
                           <div class="card-body">
                             <h5 class="card-title">Old Portfolio</h5>
                             <p class="card-text">Developed a personal website using HTML/CSS and JavaScript.</p>
@@ -218,7 +218,7 @@
                     </div>
                     <div class="col">
                       <div class="card h-100 m-auto">
-                        <img src="images/ata.png" class="card-img-top img-fluid" alt="ata">
+                        <img src="static/ata.png" class="card-img-top img-fluid" alt="ata">
                         <div class="card-body">
                           <h5 class="card-title">Assisting Teaching Assistants</h5>
                           <p class="card-text">Developed a TA managing website using HTML/CSS/JS, Python/Flask and SQLite. Placed top 3 in competition.</p>
@@ -230,7 +230,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100 m-auto">
-                          <img src="images/elfenroads.png" class="card-img-top img-fluid" alt="elfenroads">
+                          <img src="static/elfenroads.png" class="card-img-top img-fluid" alt="elfenroads">
                           <div class="card-body">
                             <h5 class="card-title">Elfenroads</h5>
                             <p class="card-text">Yearly team project. Built a digital version of Elfenroads board game using JavaScript, React and Phaser.</p>
@@ -242,7 +242,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100 m-auto">
-                          <img src="images/mcgill.png" class="card-img-top img-fluid" alt="mcgill">
+                          <img src="static/mcgill.png" class="card-img-top img-fluid" alt="mcgill">
                           <div class="card-body">
                             <h5 class="card-title">McGill Website</h5>
                             <p class="card-text">Created a resume styled website using HTML/CSS and PHP.</p>
@@ -254,7 +254,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100 m-auto">
-                          <img src="images/path.png" class="card-img-top img-fluid" alt="path">
+                          <img src="static/path.png" class="card-img-top img-fluid" alt="path">
                           <div class="card-body">
                             <h5 class="card-title">Shortest Path Finder</h5>
                             <p class="card-text">A java program that finds the shortest path from a given grid using a modified version of breadth-first search algorithm.</p>
@@ -266,7 +266,7 @@
                     </div>
                     <div class="col">
                       <div class="card h-100 m-auto">
-                        <img src="images/dungeon.png" class="card-img-top img-fluid" alt="dungeon">
+                        <img src="static/dungeon.png" class="card-img-top img-fluid" alt="dungeon">
                         <div class="card-body">
                           <h5 class="card-title">Dungeon Master</h5>
                           <p class="card-text">Created a retro dungeon game using Python and PyGame.</p>
@@ -294,7 +294,7 @@
                 </div>
                 <div class="row p-2">
                     <div class="col">
-                        <a class="btn-1" href="mailto:janssen0105@gmail.com" rel="noopener noreferrer" target="_blank">
+                        <a class="btn" href="mailto:janssen0105@gmail.com" rel="noopener noreferrer" target="_blank">
                             <span>Send Greetings</span>
                         </a>
                     </div>
