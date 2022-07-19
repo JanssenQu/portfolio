@@ -32,6 +32,7 @@ section {
 
 #profile {
     border-radius: 10px;
+    box-shadow: -50px -50px 0 -42px #1E90FF, 50px 50px 0 -42px #1E90FF;
 }
 
 ::-webkit-scrollbar {
@@ -55,4 +56,8 @@ section {
 
 .card img {
     height: 200px;
+}
+
+#panel {
+    max-width: 800px;
 }
